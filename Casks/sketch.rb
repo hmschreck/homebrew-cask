@@ -1,6 +1,6 @@
 cask 'sketch' do
-  version '51.3-57544'
-  sha256 '65b1152b90b961927894e26b1837f0328447fc0e928b4060dea935b38ad205dc'
+  version '54.1-76490'
+  sha256 'ca5a2ca9cff8a8e57ad758885c418245e165aa48edbdc9d9fc4327e1c19caa04'
 
   url "https://download.sketchapp.com/sketch-#{version}.zip"
   appcast 'https://download.sketchapp.com/sketch-versions.xml'
@@ -8,6 +8,7 @@ cask 'sketch' do
   homepage 'https://www.sketchapp.com/'
 
   auto_updates true
+  depends_on macos: '>= :high_sierra'
 
   app 'Sketch.app'
 

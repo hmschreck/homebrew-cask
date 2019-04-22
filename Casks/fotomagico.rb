@@ -1,9 +1,9 @@
 cask 'fotomagico' do
-  version '5.6.3-22849'
-  sha256 '2bb5e222f7b955103fee342921a0474f12c509597f5517423c29bf1cb785dc8e'
+  version '5.6.6-22897'
+  sha256 'd26c22e85919352ba4bb730704f57a59124f54d55255661a73581eeb19937ff2'
 
   url "https://cdn.boinx.com/software/fotomagico/Boinx_FotoMagico_#{version.major}_#{version}.app.zip"
-  appcast 'https://boinx.com/d/connect/histories/fotomagico'
+  appcast 'https://sparkle.boinx.com/appcast.lasso?appName=FotoMagico%205'
   name 'FotoMagico'
   homepage 'https://boinx.com/fotomagico/'
 

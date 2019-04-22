@@ -1,6 +1,6 @@
 cask 'axure-rp' do
-  version '8.1.0.3377'
-  sha256 '3567e0a690976e3101e89c84eac354f0b66e46b76606d7cd5a586b34a0130767'
+  version '8.1.0.3382'
+  sha256 '8139c29714e3dc083432666362a254638856f681ce81267c8d1898e07425c224'
 
   # axure.cachefly.net was verified as official when first introduced to the cask
   url 'https://axure.cachefly.net/AxureRP-Setup.dmg'

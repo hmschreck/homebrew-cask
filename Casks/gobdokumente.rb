@@ -1,12 +1,15 @@
 cask 'gobdokumente' do
-  version '1.2'
-  sha256 '7afdd5c9d7c5efdd69d9342ce2f816258e23edd0a5341cebc7e1f137d211150d'
+  version '1.4.3'
+  sha256 'b197410701fffbd0b6af33c44114d8d0344fa0a6026f4a16c612dcb00753c90b'
 
   # moapp.software was verified as official when first introduced to the cask
   url 'https://download.moapp.software/GoBDokumente.zip'
   appcast 'https://sparkle.moapp.software/gobdokumente.xml'
   name 'GoBDokumente'
+  name 'GoBDocuments'
   homepage 'https://gobdokumente.de/'
+
+  depends_on macos: '>= :el_capitan'
 
   app 'GoBDokumente.app'
 

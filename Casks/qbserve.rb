@@ -1,13 +1,13 @@
 cask 'qbserve' do
-  version '1.77'
-  sha256 'd8cb7ec28a9862682d9372f604762578c168d4634e948850d3a63e44181883b2'
+  version '1.82'
+  sha256 '008d36a9af1fdad68d1a4c8e4a7fcc5d71a936d5cee08c81e88c5284a3af89f5'
 
   url "https://qotoqot.com/qbserve/app/Qbserve-#{version}.zip"
   appcast 'https://qotoqot.com/qbserve/app/appcast.xml'
   name 'Qbserve'
   homepage 'https://qotoqot.com/qbserve/'
 
-  accessibility_access true
+  auto_updates true
   depends_on macos: '>= :yosemite'
 
   app 'Qbserve.app'

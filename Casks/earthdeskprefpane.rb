@@ -1,11 +1,11 @@
 cask 'earthdeskprefpane' do
-  version '721-27E5'
-  sha256 '59262b3b71035294988496530847395a2d6f9a3e48ccc2de40e87a1b3c5c3884'
+  version '733-2840'
+  sha256 '7267631029af1c291eebebbf2d55488f22396dff06ad8f137ab2ab34e4c908b0'
 
-  url "http://download.xericdesign.com/earthdesk-#{version}.zip"
-  appcast 'http://www.xericdesign.com/sparkle/feeds/EarthDeskAppFeedV7.xml'
+  url "https://download.xericdesign.com/earthdesk-#{version}.zip"
+  appcast 'https://www.xericdesign.com/sparkle/feeds/EarthDeskAppFeedV7.xml'
   name 'EarthDesk'
-  homepage 'http://www.xericdesign.com/earthdesk.php'
+  homepage 'https://www.xericdesign.com/earthdesk.php'
 
   auto_updates true
 

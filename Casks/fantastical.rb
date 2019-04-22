@@ -1,6 +1,6 @@
 cask 'fantastical' do
-  version '2.5.4'
-  sha256 '4852765d90c237a9e3595d1cecebfdfd582c35957f6294532ec691a8a30d8c3b'
+  version '2.5.7'
+  sha256 '5fce185e94e7fa41c755448ae76a8698303830e6cb701f84f81ca4022137a5a0'
 
   url "http://cdn.flexibits.com/Fantastical_#{version}.zip"
   appcast "https://flexibits.com/fantastical/appcast#{version.major}.php"

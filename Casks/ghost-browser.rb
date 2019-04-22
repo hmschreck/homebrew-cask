@@ -1,10 +1,11 @@
 cask 'ghost-browser' do
-  version '1.1.0.7'
-  sha256 '5113dcc38084f5e3baeb71258da133f3f8155478205358e62561c8fc7da4fef0'
+  version '2.1.0.6'
+  sha256 '17c24adf295b3d1fb2270af874eccd0ea0f9e093ffaf35f7b851aff2bed759b0'
 
-  url "https://ghostbrowser.com/ghostdev/downloads/GhostBrowser-#{version}.dmg"
+  # ghostbrowser.s3.amazonaws.com was verified as official when first introduced to the cask
+  url "https://ghostbrowser.s3.amazonaws.com/downloads/GhostBrowser-#{version}.dmg"
   name 'Ghost Browser'
-  homepage 'https://ghostbrowser.com/'
+  homepage 'https://ghostbrowser.com/download/'
 
   app 'Ghost Browser.app'
 end

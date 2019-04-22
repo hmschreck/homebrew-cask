@@ -1,12 +1,13 @@
 cask 'zeplin' do
-  version :latest
-  sha256 :no_check
+  version '2.3.3,666'
+  sha256 '2ebeec45a303da2a126037ae0d056770896b8116412c96b4d41a907221409217'
 
-  # downloads can be found at https://support.zeplin.io/quick-start/downloading-mac-and-windows-apps
-  # zpl.io was verified as official when first introduced to the cask
   url 'https://api.zeplin.io/urls/download-mac'
+  appcast 'https://rink.hockeyapp.net/api/2/apps/8926efffe734b6d303d09f41d90c34fc'
   name 'Zeplin'
   homepage 'https://zeplin.io/'
+
+  auto_updates true
 
   app 'Zeplin.app'
 

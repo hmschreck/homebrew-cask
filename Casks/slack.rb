@@ -1,6 +1,6 @@
 cask 'slack' do
-  version '3.3.1'
-  sha256 '59566ba1269900e5cfa7655e818b55831db3cebc9f90f04094f5fdafb03d48f1'
+  version '3.4.0'
+  sha256 'bd5e8e5b049451093c0b87055da019d76f21241bf6fe33e2c4e881c159330a88'
 
   # downloads.slack-edge.com was verified as official when first introduced to the cask
   url "https://downloads.slack-edge.com/mac_releases/Slack-#{version}-macOS.zip"

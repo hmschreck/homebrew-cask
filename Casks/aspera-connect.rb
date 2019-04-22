@@ -3,8 +3,9 @@ cask 'aspera-connect' do
   sha256 'a04fd1697ed797242d9201e2ad2be345431fffc89076d96bb637c4efa23eee02'
 
   url "https://download.asperasoft.com/download/sw/connect/#{version.major_minor_patch}/IBMAsperaConnectInstaller-#{version}.dmg"
+  appcast 'https://asperasoft.com/software/transfer-clients/connect-web-browser-plug-in/#whatsnew-399'
   name 'Aspera Connect'
-  homepage 'http://asperasoft.com/software/transfer-clients/connect-web-browser-plug-in/'
+  homepage 'https://asperasoft.com/software/transfer-clients/connect-web-browser-plug-in/'
 
   pkg 'IBMAsperaConnectInstaller.pkg'
 

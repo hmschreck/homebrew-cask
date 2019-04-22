@@ -1,9 +1,9 @@
 cask 'salesx' do
-  version '1.4.9'
-  sha256 '1962638d98bcffff3d557a6377c6a3453ff407cd595001c5bbf35bdf61935d47'
+  version '1.6'
+  sha256 '62a7a1176b4104e78c390018a4dd0d06a5f4e33ca506708b0447e8a8914252c9'
 
   # dl.devmate.com/io.seedlab.salesx was verified as official when first introduced to the cask
-  url 'http://dl.devmate.com/io.seedlab.salesx/SalesX.zip'
+  url 'https://dl.devmate.com/io.seedlab.salesx/SalesX.zip'
   appcast 'https://updates.devmate.com/io.seedlab.salesx.xml'
   name 'SalesX'
   homepage 'http://salesx.in/'

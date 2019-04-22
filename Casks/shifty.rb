@@ -1,12 +1,14 @@
 cask 'shifty' do
-  version '0.5.2'
-  sha256 '30a7d16d602d8756c4662b50ce4595f687ceb0a41abbabacab711e3a4b1b335d'
+  version '1.0.2'
+  sha256 'f278579084129ca034c7f723a35bb336dfe08fd6ea124a03ec136ed4d60f5dc8'
 
   # github.com/thompsonate/Shifty was verified as official when first introduced to the cask
-  url "https://github.com/thompsonate/Shifty/releases/download/#{version}/Shifty-#{version}.dmg"
+  url "https://github.com/thompsonate/Shifty/releases/download/v#{version}/Shifty-#{version}.zip"
   appcast 'https://github.com/thompsonate/Shifty/releases.atom'
   name 'Shifty'
-  homepage 'http://shifty.natethompson.io/'
+  homepage 'https://shifty.natethompson.io/'
+
+  depends_on macos: '>= :sierra'
 
   app 'Shifty.app'
 

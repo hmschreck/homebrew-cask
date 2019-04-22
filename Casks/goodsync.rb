@@ -1,9 +1,10 @@
 cask 'goodsync' do
-  version '10.9.8'
-  sha256 'ddd01ab9577ece630e69b20ee4616d46979e37a210118dcfa61a2a52df98e7c5'
+  version '10.9.26.82,649'
+  sha256 '6ffcb05e29bcea3ad43cd8b686052bb6e5bad08d49f1a544192eea4dfc9e1937'
 
-  url "https://www.goodsync.com/download/goodsync-v#{version.major}-mac.dmg"
-  appcast 'https://www.goodsync.com/download'
+  # rink.hockeyapp.net/api/2/apps/8b491acdaa8942108b5d8b019be7fcef was verified as official when first introduced to the cask
+  url "https://rink.hockeyapp.net/api/2/apps/8b491acdaa8942108b5d8b019be7fcef/app_versions/#{version.after_comma}?format=zip&avtoken=6b1e930b304f74f53ebe6e776a505fa3bfbe6e6d&download_origin=hockeyapp"
+  appcast 'https://rink.hockeyapp.net/api/2/apps/8b491acdaa8942108b5d8b019be7fcef'
   name 'GoodSync'
   homepage 'https://www.goodsync.com/'
 

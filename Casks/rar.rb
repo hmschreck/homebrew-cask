@@ -1,6 +1,6 @@
 cask 'rar' do
-  version '5.6.0'
-  sha256 '381ca05ca2701cf72148da49d36a4dda4e8e29cd0c3879f697b2861326277d5d'
+  version '5.7.0'
+  sha256 'c303ad9634cde79863270aa74e4f3565f5a4e264ad22fd6f177e223cab42a9bd'
 
   url "https://www.rarlab.com/rar/rarosx-#{version}.tar.gz"
   name 'RAR Archiver'

@@ -1,7 +1,7 @@
 cask 'virtualc64' do
   # note: "64" is not a version number, but an intrinsic part of the product name
-  version '2.5'
-  sha256 '793135574ab960e40beff9c4be7bb5a484d3d0ac1ebf15120d0729fd5749c8e3'
+  version '3.3'
+  sha256 '5ebf410d46d267ea10dc7c196405e13ebf40c6a8fb7e6ef71b673a87305448c5'
 
   url "http://www.dirkwhoffmann.de/virtualc64/VirtualC64_#{version}.zip"
   appcast 'http://dirkwhoffmann.de/virtualc64/VirtualC64Appcast.xml'

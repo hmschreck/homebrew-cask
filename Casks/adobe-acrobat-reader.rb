@@ -1,14 +1,13 @@
 cask 'adobe-acrobat-reader' do
-  version '18.011.20063'
-  sha256 '09aa429f8d0a3487e3da11dc9a5a9515c2fc3087c8eb06a72f575ee2f823e9fc'
+  version '19.010.20099'
+  sha256 '00eb772c1a3c714f5298cf4fffe117d39fd27722d8dc9e8c35cc9bf2232d91a5'
 
   url "http://ardownload.adobe.com/pub/adobe/reader/mac/AcrobatDC/#{version.no_dots}/AcroRdrDC_#{version.no_dots}_MUI.dmg"
-  appcast 'http://get.adobe.com/reader/'
+  appcast 'https://get.adobe.com/reader/'
   name 'Adobe Acrobat Reader DC'
   homepage 'https://acrobat.adobe.com/us/en/acrobat/pdf-reader.html'
 
   auto_updates true
-  depends_on macos: '>= :mavericks'
 
   pkg "AcroRdrDC_#{version.no_dots}_MUI.pkg"
 

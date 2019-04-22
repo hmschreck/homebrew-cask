@@ -1,10 +1,10 @@
 cask 'clip-studio-paint' do
-  version '1.8.0'
-  sha256 '6030b05106524c58fe119d1cd4524930b8bc078566453e0193ee9d0a27b1bed4'
+  version '1.9.0'
+  sha256 'c005010ca84d0aa88503aa9a81a89cc3ebe6f762533a713dceacd769391f5669'
 
-  url "http://vd.clipstudio.net/clipcontent/paint/app/#{version.no_dots}/CSP_#{version.no_dots}m_app.pkg"
+  url "https://vd.clipstudio.net/clipcontent/paint/app/#{version.no_dots}/CSP_#{version.no_dots}m_app.pkg"
   name 'CLIP STUDIO PAINT'
-  homepage 'http://www.clipstudio.net/en'
+  homepage 'https://www.clipstudio.net/en'
 
   installer manual: "CSP_#{version.no_dots}m_app.pkg"
 

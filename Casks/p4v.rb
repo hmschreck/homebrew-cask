@@ -1,9 +1,9 @@
 cask 'p4v' do
-  version '18.2-1687764'
-  sha256 'fb2d3cfc7af9ac26f0d7e57415b7f983f81b389db0ca7c1d75b11f1d35931c44'
+  version '18.4-1753667'
+  sha256 'b62bbca489f787fc0d55cce5c17f95876b0159a57b801bcfc9c11474d376a03e'
 
-  url "http://cdist2.perforce.com/perforce/r#{version.major_minor}/bin.macosx1013x86_64/P4V.dmg"
-  appcast "http://filehost.perforce.com/perforce/r#{version.major_minor}/bin.macosx1013x86_64/SHA256SUMS"
+  url "https://cdist2.perforce.com/perforce/r#{version.major_minor}/bin.macosx1013x86_64/P4V.dmg"
+  appcast "https://cdist2.perforce.com/perforce/r#{version.major_minor}/bin.macosx1013x86_64/SHA256SUMS"
   name 'Perforce Visual Client'
   name 'P4Merge'
   name 'P4V'
@@ -13,6 +13,20 @@ cask 'p4v' do
   app 'p4admin.app'
   app 'p4merge.app'
   binary 'p4vc'
+  # shim script (https://github.com/Homebrew/homebrew-cask/issues/18809)
+  p4_wrapper = "#{staged_path}/p4.wrapper.sh"
+  binary p4_wrapper, target: 'p4v'
+  binary p4_wrapper, target: 'p4admin'
+  binary p4_wrapper, target: 'p4merge'
+
+  preflight do
+    IO.write p4_wrapper, <<~EOS
+      #!/bin/bash
+      set -euo pipefail
+      COMMAND=$(basename "$0")
+      exec "#{appdir}/${COMMAND}.app/Contents/MacOS/${COMMAND}" "$@" 2> /dev/null
+    EOS
+  end
 
   zap trash: [
                '~/Library/Preferences/com.perforce.p4v',

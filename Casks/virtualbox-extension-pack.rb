@@ -1,12 +1,13 @@
 cask 'virtualbox-extension-pack' do
-  version '5.2.18,124319'
-  sha256 '3ecb43c71502741f4eb790576c608eb65cd424bcf3dfdb56471e4a2cac806f68'
+  version '6.0.6'
+  sha256 '794f023a186bd217c29c3d30bd1434b6e9de3b242c7bf740d06d10f2d3d981c6'
 
-  url "https://download.virtualbox.org/virtualbox/#{version.before_comma}/Oracle_VM_VirtualBox_Extension_Pack-#{version.before_comma}-#{version.after_comma}.vbox-extpack"
+  url "https://download.virtualbox.org/virtualbox/#{version}/Oracle_VM_VirtualBox_Extension_Pack-#{version}.vbox-extpack"
   appcast 'https://download.virtualbox.org/virtualbox/LATEST.TXT'
   name 'Oracle VirtualBox Extension Pack'
   homepage 'https://www.virtualbox.org/'
 
+  conflicts_with cask: 'virtualbox-extension-pack-beta'
   depends_on cask: 'virtualbox'
   container type: :naked
 
@@ -16,7 +17,7 @@ cask 'virtualbox-extension-pack' do
     system_command '/usr/local/bin/VBoxManage',
                    args:  [
                             'extpack', 'install',
-                            '--replace', "#{staged_path}/Oracle_VM_VirtualBox_Extension_Pack-#{version.before_comma}-#{version.after_comma}.vbox-extpack"
+                            '--replace', "#{staged_path}/Oracle_VM_VirtualBox_Extension_Pack-#{version}.vbox-extpack"
                           ],
                    input: 'y',
                    sudo:  true
